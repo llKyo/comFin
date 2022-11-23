@@ -2,11 +2,12 @@
 
 const url = './api/index.php';
 
-export const f_registrar_en_finanzas = async (rut, carrera) => {
+export const f_registrar_en_finanzas = async (rut, carrera, accion) => {
 
     const formData = new FormData();
     formData.append("rut", rut);
     formData.append("carrera", carrera);
+    formData.append("accion", accion);
 
     
 

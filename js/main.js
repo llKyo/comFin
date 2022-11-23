@@ -14,7 +14,7 @@ import { f_finalizar_estilo_carga, f_iniciar_estilo_carga } from "./utils/utils.
         
         f_iniciar_estilo_carga();
 
-        let resp = await f_registrar_en_finanzas(inputRut.value, inputCarrera.value);
+        let resp = await f_registrar_en_finanzas(inputRut.value, inputCarrera.value, 1);
         console.log(resp);
 
         f_finalizar_estilo_carga();
