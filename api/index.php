@@ -6,31 +6,32 @@
     $iCCarrera  = $_POST["carrera"];
     $iAccion    = $_POST["accion"];
 
-    $sMensaeje = "";
+    $sMensaje = "";
 
     switch ($iAccion) {
         case 1:
             crearPersona();
-            $sMensaeje = "Crea Carrera";
+            $sMensaje = "Personas Creada";
             break;
         case 2:
             crearCxCDI();
+            $sMensaje = "CxC DI Creada";
             break;
         case 3:
             crearCxCArancel();
+            $sMensaje = "CxC Arancel Creada";
             break;
         default:
             # code...
             break;
     }
     
-    sleep(1);
 
     $respuesta = new stdClass();
     $respuesta->resultado   = true;
     $respuesta->rut         = $iRut;
     $respuesta->carrera     = $iCCarrera;
-    $respuesta->mensaeje    = $sMensaeje;
+    $respuesta->mensaje     = $sMensaje;
     echo json_encode($respuesta);
     // $a = 'come!! fetch this value';
     // echo ($a);

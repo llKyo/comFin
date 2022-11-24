@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<?php require_once("config.php") ?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h1>Hello, world!</h1>
+                <div class="text-center py-4 titulo five">
+                    <h1><b>P</b>roceso <b>E</b>special <b>D</b>e <b>R</b>ecursividad <b>O</b>peracional</h1>
+                </div>
                 <?php require_once("./template/card-form.php") ?>
                 <div class="pt-2">
                     <?php require_once("./template/acordeon.php") ?>

@@ -1,6 +1,42 @@
 body {
-    background-color: radial-gradient(
-        circle at 18.7% 37.8%
-        , rgb(129, 129, 129) 0%
-        , rgb(126, 163, 179) 90%);  
+    background: linear-gradient(-45deg, #ee7752, #3755a8, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #ffffff;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: bold;
 }
